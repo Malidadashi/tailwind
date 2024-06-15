@@ -1,15 +1,16 @@
+// src/App.js
 import React from 'react';
 
-function CardContent() {
+function App() {
   return (
-    <div className="p-8">
-      <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case Study</div>
-      <a href="/" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
-      <p className="mt-2 text-gray-500">
-        Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.
-      </p>
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <div className="bg-white p-8 rounded-lg shadow-lg">
+        <h1 className="text-2xl font-bold mb-4">Hello, Tailwind!</h1>
+        <p className="text-gray-700">This is a simple example of using Tailwind CSS in a React project.</p>
+        <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">Click Me</button>
+      </div>
     </div>
   );
 }
 
-export default CardContent;
+export default App;

@@ -1,0 +1,31 @@
+.scroll-based-comments {
+  text-align: center;
+  padding: 20px;
+}
+
+.comments {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.comment {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(
+    20px
+  ); /* Move comments down initially for smooth reveal */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth opacity and transform transition */
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow for depth */
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  border: none; /* Remove any potential border */
+}
+
+.comment.exposed {
+  opacity: 1; /* Fully visible when exposed */
+  transform: translateY(0); /* Move comment back to original position */
+}

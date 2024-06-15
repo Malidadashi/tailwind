@@ -350,3 +350,7 @@ template {
 
 
 /* put style below here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+

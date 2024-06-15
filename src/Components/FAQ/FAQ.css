@@ -1,0 +1,53 @@
+.expandable-box {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto; /* Center horizontally and add margin */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden; /* Hide overflow from expanding content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+  transition: box-shadow 0.3s ease; /* Optional: Add smooth hover effect */
+}
+
+.expandable-box:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Optional: Adjust shadow on hover */
+}
+
+.box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.box-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.box-content {
+  padding: 15px;
+  background-color: #f8f9fa;
+  display: none; /* Hide content by default */
+}
+
+.expandable-box.expanded .box-content {
+  display: block; /* Show content when expanded */
+}
+
+.icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Optional: Add smooth transform animation */
+}
+
+.icon-chevron {
+  display: block;
+}
+
+.icon-chevron.expand {
+  transform: rotate(90deg); /* Rotate the chevron icon for expanded state */
+}
