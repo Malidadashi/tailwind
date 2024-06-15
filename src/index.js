@@ -8,7 +8,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import FAQ from "./Components/FAQ/FAQ";
 import ScrollBasedComments from "./Components/MyStory/ScrollBasedComments";
-import MovingButtonsContainers from "./Components/MovingButtons/MovingButtonsContainers";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,7 +17,7 @@ root.render(
       <Route path="/footer" element={<Footer />} />
       <Route path="/FAQ" element={<FAQ />} />
       <Route path="/ScrollBasedComments" element={<ScrollBasedComments />} />
-      <Route path="/MovingButtonsContainers" element={<MovingButtonsContainers />} />
+      {/* <Route path="/Containers" element={<Containers />} /> */}
 
       
     </Routes>
