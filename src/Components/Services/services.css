@@ -1,0 +1,118 @@
+/* .app {
+  text-align: center;
+  padding: 20px;
+}
+
+.content-box {
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.content-box h1 {
+  margin: 0;
+}
+
+.content-box p {
+  margin: 10px 0 0;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+} */
+
+.services {
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.content-box {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.content-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-box h1 {
+  margin: 0;
+  font-size: 24px;
+  animation: fadeInDown 1s;
+}
+
+.content-box p {
+  margin: 10px 0 0;
+  font-size: 16px;
+  animation: fadeInUp 1s;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #4caf50;
+  color: white;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.buttons button:hover {
+  background: #45a049;
+  transform: scale(1.1);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

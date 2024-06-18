@@ -1,6 +1,7 @@
 import React from 'react';
 import './MovingButtonsItems.css';
 
+
 const MovingButtonsItems = ({ icon, text }) => {
   return (
     <div className="box">

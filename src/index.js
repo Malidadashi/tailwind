@@ -8,6 +8,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import FAQ from "./Components/FAQ/FAQ";
 import ScrollBasedComments from "./Components/MyStory/ScrollBasedComments";
+import ErrorPage from "./Components/Errorpage/Errorpage";
+import { register } from 'swiper/element/bundle';
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,7 +20,7 @@ root.render(
       <Route path="/footer" element={<Footer />} />
       <Route path="/FAQ" element={<FAQ />} />
       <Route path="/ScrollBasedComments" element={<ScrollBasedComments />} />
-      {/* <Route path="/Containers" element={<Containers />} /> */}
+      <Route path="/*" element={<ErrorPage/>} />
 
       
     </Routes>

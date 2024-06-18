@@ -1,0 +1,21 @@
+.offline-notification {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffcc00;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+
+  .unhappyicon {
+    font-weight: 900;
+  }
+}
