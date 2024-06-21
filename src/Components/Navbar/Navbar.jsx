@@ -1,22 +1,36 @@
-// src/components/Navbar.js
-import React from 'react';
+import React, { useState } from 'react';
+import LanguageSwitcher from './LanguageSwitcher';
+import './navbar.css';
+import { FaGithub } from "react-icons/fa";
+
+const handleClick = () => {
+  window.location.href = 'https://github.com/Malidadashi';
+};
 
 const Navbar = () => {
+  const [selectedLanguage, setSelectedLanguage] = useState('English');
+
+  const handleLanguageSelect = (language) => {
+    setSelectedLanguage(language);
+  };
+
   return (
-    <nav className="bg-gray-800 p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-2xl font-bold">My Portfolio</div>
-        <ul className="hidden md:flex space-x-4 text-white">
-          <li><a href="#about" className="hover:text-gray-400">About</a></li>
-          <li><a href="#services" className="hover:text-gray-400">Services</a></li>
-          <li><a href="#projects" className="hover:text-gray-400">Projects</a></li>
-          <li><a href="#contact" className="hover:text-gray-400">Contact</a></li>
+
+    <nav className="navbar">
+      <div className="navbar-left">
+        <ul className="navbar-list">
+          <li className="navbar-item"><a href="#home">Home</a></li>
+          <li className="navbar-item"><a href="#about">About</a></li>
+          <li className="navbar-item"><a href="#services">Services</a></li>
+          <li className="navbar-item"><a href="#contact">Contact</a></li>
         </ul>
-        <button className="md:hidden text-white focus:outline-none">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
-          </svg>
-        </button>
+      </div>
+      <div className="navbar-right">
+        <LanguageSwitcher
+          selectedLanguage={selectedLanguage}
+          onSelectLanguage={handleLanguageSelect}
+        />
+        <button className="navbar-button" onClick={handleClick}>Login <FaGithub className='navbar-button-icon' /></button>
       </div>
     </nav>
   );

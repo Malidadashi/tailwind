@@ -1,0 +1,62 @@
+.language-switcher {
+  position: relative;
+}
+
+.language-button {
+  border: none;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.language-button:hover {
+  background-color: #0056b3;
+}
+
+.flash {
+  animation: flash 0.5s infinite alternate;
+}
+
+@keyframes flash {
+  from {
+    background-color: #007bff;
+  }
+  to {
+    background-color: #0056b3;
+  }
+}
+
+.language-list {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  position: absolute;
+  top: 40px; /* Adjust as needed */
+  right: 0; /* Adjust as needed */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.language-item {
+  padding: 8px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.language-item:hover {
+  background-color: #f0f0f0;
+}
+
+.fi {
+  margin-right: 5px;
+}

@@ -4,7 +4,7 @@ import "./FAQ.css";
 
 const FAQ = () => {
   return (
-    <div className="app">
+    <div className="">
       <ExpandableBox
         title="Box 1"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."

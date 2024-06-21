@@ -43,7 +43,6 @@ const ScrollBasedComments = () => {
 
   return (
     <div className="scroll-based-comments">
-      <h2>Scroll-Based Comments</h2>
       <div className="comments">
         {comments.map((comment, index) => (
           <div className="comment" key={index}>

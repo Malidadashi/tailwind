@@ -1,7 +1,8 @@
-.container {
+.Job-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around; /* Or use space-between, space-evenly, etc. */
   align-items: center;
   width: 100%;
 }
+
